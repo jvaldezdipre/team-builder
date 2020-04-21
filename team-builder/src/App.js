@@ -23,14 +23,6 @@ const initialFormValues = {
 
 function App() {
   const [members, setMembers] = useState(initialMemberList); //[
-  //{
-  //id: uuid(),
-  // membername: 'Bob',
-  //email: 'bob@bob.com',
-  //role: 'Team Leader',
-  //},
-  //]
-
   const [formValues, setFormValues] = useState(initialFormValues);
 
   const onInputChange = evt => {
@@ -59,9 +51,11 @@ function App() {
   return (
     <div className='App'>
       <h1>Best Team</h1>
-      {members.map(member => {
-        return <TeamMember key={member.id} details={member} />;
-      })}
+      <div className='member-list'>
+        {members.map(member => {
+          return <TeamMember key={member.id} details={member} />;
+        })}
+      </div>
       <TeamMemberForm
         values={formValues}
         onInputChange={onInputChange}

@@ -9,7 +9,7 @@ function TeamMemberForm(props) {
         <input
           value={props.values.membername}
           onChange={props.onInputChange}
-          name='name'
+          name='membername'
           type='text'
         />
       </label>
