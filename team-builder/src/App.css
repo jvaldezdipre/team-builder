@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.member-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member-container {
+  width: 250px;
+  padding: 10px;
+}
